@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ratan Tata — Visionary Industrialist & Philanthropist (1937–2024)</title>
+  <meta name="description" content="Explore the life, landmark milestones, key ventures, and enduring ethical leadership of Ratan Tata (1937–2024), former Chairman of the Tata Group.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#intro" class="skip-link">Skip to main content</a>
+
+  <!-- Apple Global Nav (Ultra-thin 44px black bar) -->
+  <header class="global-nav" id="global-nav">
+    <div class="global-nav-container">
+      <a href="#intro" class="nav-brand" aria-label="Home">
+        <span class="nav-brand-symbol"></span>
+        <span class="nav-brand-text">Tata Showcase</span>
+      </a>
+      <div class="global-nav-meta">
+        <span class="global-nav-badge">EDC Second-Year Task 02</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Apple Sub-Nav Frosted (Sticky 52px glass bar) -->
+  <nav class="sub-nav-frosted" id="sub-nav-frosted" aria-label="Section navigation">
+    <div class="sub-nav-container">
+      <div class="sub-nav-left">
+        <span class="sub-nav-title">Ratan Tata</span>
+        <span class="sub-nav-subtitle">1937–2024</span>
+      </div>
+      <div class="sub-nav-right">
+        <div class="sub-nav-links" id="sub-nav-links">
+          <a href="#intro" class="sub-nav-link active">Overview</a>
+          <a href="#journey" class="sub-nav-link">Timeline</a>
+          <a href="#ventures" class="sub-nav-link">Ventures</a>
+          <a href="#impact" class="sub-nav-link">Impact</a>
+          <a href="#sources" class="sub-nav-link">Sources</a>
+        </div>
+        <a href="#journey" class="btn-subnav-pill">Journey</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Tile 1: Hero (Light Parchment Tile) -->
+    <section id="intro" class="tile-section tile-parchment intro-tile" aria-labelledby="intro-heading">
+      <div class="tile-inner">
+        <div class="hero-split-grid">
+          <div class="hero-copy-col">
+            <span class="hero-eyebrow">Chairman Emeritus · Tata Sons</span>
+            <h1 id="intro-heading" class="hero-headline">Ratan Naval Tata</h1>
+            <p class="hero-subhead">1937 – 2024</p>
+            <p class="hero-tagline">Architect of modern Indian industry, ethical visionary, and transformative philanthropist.</p>
+            
+            <div class="hero-body">
+              <p>
+                Ratan Naval Tata led the Tata Group from 1991 to 2012, transforming a regional federation into an international colossus spanning over 100 countries.
+                He proved indigenous engineering on global roads with the Indica and Nano, executed historic foreign acquisitions of Jaguar Land Rover and Tetley, and placed over 65% of Tata Sons' wealth in philanthropic trusts serving public healthcare and education.
+              </p>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#journey" class="btn-pill-primary">Explore Milestones</a>
+              <a href="#ventures" class="btn-pill-secondary">Key Ventures</a>
+            </div>
+          </div>
+
+          <div class="hero-visual-col">
+            <!-- Large Interactive 3D Physics Lanyard Badge -->
+            <div class="lanyard-container" id="lanyard-container" aria-label="Interactive 3D Ratan Tata Credential Badge">
+              <canvas class="lanyard-canvas" id="lanyard-canvas"></canvas>
+              
+              <!-- Header Drag Hint (Below Header, Removed on Drag) -->
+              <div class="header-drag-hint" id="header-drag-hint" aria-hidden="true">
+                <span class="hint-dot"></span>
+                <span>Drag ID</span>
+              </div>`
+
+              <div 
+                class="lanyard-card" 
+                id="lanyard-card" 
+                tabindex="0" 
+                aria-label="Ratan Tata Credential Badge. Drag to swing."
+              >
+                <div class="lanyard-clip" aria-hidden="true">
+                  <div class="clip-loop"></div>
+                  <div class="clip-hook"></div>
+                </div>
+
+                <div class="card-face card-front">
+                  <img src="card-front.png" alt="Ratan Naval Tata Official Executive Credential" draggable="false">
+                </div>
+              </div>
+            </div>
+            <div class="lanyard-credit">
+              <span>Photo: Wikimedia Commons / Hemant Mishra (CC BY-SA 3.0)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tile 2: Journey ScrollStack (Near-Black Tile #272729) -->
+    <section id="journey" class="tile-section tile-dark journey-tile" aria-labelledby="journey-heading">
+      <div class="tile-inner">
+        <div class="tile-header center">
+          <span class="tile-kicker kicker-on-dark">Milestone Deck</span>
+          <h2 id="journey-heading" class="tile-headline headline-on-dark">The Journey of Leadership</h2>
+          <p class="tile-lead lead-on-dark">
+            Ten defining milestones in modern Indian industrial history, stacked in chronological sequence. Scroll to explore how each chapter laid the foundation for the next.
+          </p>
+          <div class="timeline-quick-actions">
+            <span class="scroll-stack-badge" id="scroll-stack-counter">Scroll down to explore card deck</span>
+          </div>
+        </div>
+
+        <!-- ScrollStack Container -->
+        <div id="timeline-container" class="scroll-stack-container" role="feed" aria-label="Journey Milestone Cards Stack">
+          <!-- Injected via script.js as ScrollStack Cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tile 3: Key Ventures & Connection Map (White Canvas Tile #ffffff) -->
+    <section id="ventures" class="tile-section tile-white ventures-tile" aria-labelledby="ventures-heading">
+      <div class="tile-inner">
+        <div class="tile-header center">
+          <span class="tile-kicker">Enterprises & Innovation</span>
+          <h2 id="ventures-heading" class="tile-headline">Key Companies & Strategic Ventures</h2>
+          <p class="tile-lead">
+            The flagship enterprises Ratan Tata shaped, international acquisitions he championed, and his later backing of next-generation tech startups.
+          </p>
+        </div>
+
+        <!-- Tata Group Family Tree Connection Map (Apple Utility Card) -->
+        <div class="apple-utility-card connection-map-card" id="connection-map-module">
+          <div class="card-header-bar">
+            <div>
+              <span class="card-eyebrow">Interactive Enterprise Map</span>
+              <h3 class="card-headline">Tata Group “Family Tree” Architecture</h3>
+              <p class="card-subhead">Click any node to see how Tata Sons connects the operating companies, landmark overseas acquisitions, and the philanthropic trusts.</p>
+            </div>
+            <div class="map-legend-row" aria-label="Map color key">
+              <span class="legend-chip"><span class="chip-dot dot-trusts"></span> Philanthropic Trusts (66%)</span>
+              <span class="legend-chip"><span class="chip-dot dot-parent"></span> Tata Sons (Holding)</span>
+              <span class="legend-chip"><span class="chip-dot dot-operating"></span> Operating Firm</span>
+              <span class="legend-chip"><span class="chip-dot dot-acquisition"></span> Acquisition</span>
+            </div>
+          </div>
+
+          <div class="map-split-view">
+            <div class="map-svg-holder" id="map-svg-holder">
+              <!-- Injected via script.js -->
+            </div>
+            <aside class="map-details-pane spotlight-card" id="map-node-details" aria-live="polite">
+              <!-- Injected via script.js -->
+            </aside>
+          </div>
+        </div>
+
+
+        <!-- Ventures Explorer: Side-by-Side Master-Detail Layout -->
+        <div class="ventures-explorer-split">
+          <!-- Left Column: Interactive Flowing Tab Menu -->
+          <div class="ventures-tab-sidebar">
+            <div class="sidebar-header-pill">
+              <span class="sidebar-pill-dot"></span>
+              <span class="sidebar-header-text">Select Venture</span>
+            </div>
+            <div class="apple-tablist vertical-tablist" role="tablist" id="ventures-tablist" aria-label="Select venture">
+              <!-- Injected via script.js -->
+            </div>
+          </div>
+
+          <!-- Right Column: Selected Venture Spotlight Card -->
+          <div id="ventures-spotlight" class="apple-utility-card spotlight-card venture-spotlight-display" role="tabpanel" aria-live="polite">
+            <!-- Injected via script.js -->
+          </div>
+        </div>
+
+
+
+        <div class="orka-carousel-viewport">
+          <div id="ventures-grid" class="orka-carousel-track" role="region" aria-label="Enterprise cards carousel">
+            <!-- Injected via script.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tile 4: Impact and Takeaways (Near-Black Tile #252527) -->
+    <section id="impact" class="tile-section tile-dark-3 impact-tile" aria-labelledby="impact-heading">
+      <div class="tile-inner">
+        <div class="tile-header center">
+          <span class="tile-kicker kicker-on-dark">Enduring Legacy</span>
+          <h2 id="impact-heading" class="tile-headline headline-on-dark">Impact & Key Takeaways</h2>
+          <p class="tile-lead lead-on-dark">
+            Two monumental achievements that transformed global enterprise and two practical principles for modern entrepreneurs and students.
+          </p>
+        </div>
+
+        <!-- CardSwap: 3D Stacked Deck with Bright Cards on Dark Canvas -->
+        <div class="card-swap-container" id="impact-card-swap" role="region" aria-label="Impact and Takeaways Card Deck">
+          <div class="card-swap-viewport" id="card-swap-viewport">
+            <!-- Card 1: Monumental Achievement #1 -->
+            <article class="card-swap-card bright-card" data-card-index="0" id="impact-card-0">
+              <div class="card-swap-item-content">
+                <div class="card-swap-header">
+                  <div class="card-badge-pill badge-achievement">Monumental Achievement #1</div>
+                  <span class="card-number-tag">01 / 04</span>
+                </div>
+                <div class="card-swap-body">
+                  <h3 class="impact-swap-title">Global Scale & Brand Modernization</h3>
+                  <p class="impact-swap-desc">
+                    When Ratan Tata took over Tata Sons in 1991, the group was a fractured confederation of independent satraps. He unified the brand, enforced mandatory retirement ages, and boldly acquired historic international brands—including <strong>Tetley Tea (2000)</strong>, <strong>Corus Steel (2007)</strong>, and <strong>Jaguar Land Rover (2008)</strong>. Group revenues expanded over 40-fold with &gt;65% coming from international markets.
+                  </p>
+                </div>
+                <div class="impact-stat-highlight">
+                  <span class="swap-stat-num">40x+</span>
+                  <span class="swap-stat-label">Revenue expansion during his 21-year chairmanship</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2: Monumental Achievement #2 -->
+            <article class="card-swap-card bright-card" data-card-index="1" id="impact-card-1">
+              <div class="card-swap-item-content">
+                <div class="card-swap-header">
+                  <div class="card-badge-pill badge-achievement">Monumental Achievement #2</div>
+                  <span class="card-number-tag">02 / 04</span>
+                </div>
+                <div class="card-swap-body">
+                  <h3 class="impact-swap-title">Institutional Philanthropy via Tata Trusts</h3>
+                  <p class="impact-swap-desc">
+                    Unlike traditional corporate dynasts, over <strong>65% of Tata Sons' equity capital</strong> is permanently endowed to philanthropic trusts (notably Sir Dorabji Tata Trust and Sir Ratan Tata Trust). Ratan Tata stewarded this unique institutional model, deploying hundreds of millions of dollars toward cancer institutes, rural water filtration, higher education scholarships, and animal welfare.
+                  </p>
+                </div>
+                <div class="impact-stat-highlight">
+                  <span class="swap-stat-num">66%</span>
+                  <span class="swap-stat-label">Equity held directly by philanthropic trusts</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: Actionable Takeaway #1 -->
+            <article class="card-swap-card bright-card" data-card-index="2" id="impact-card-2">
+              <div class="card-swap-item-content">
+                <div class="card-swap-header">
+                  <div class="card-badge-pill badge-takeaway">Actionable Takeaway #1</div>
+                  <span class="card-number-tag">03 / 04</span>
+                </div>
+                <div class="card-swap-body">
+                  <h3 class="impact-swap-title">Ambitious Products for Ordinary Citizens</h3>
+                  <p class="impact-swap-desc">
+                    True innovation does not exclusively cater to affluent consumers; it addresses systemic everyday friction. Witnessing a family of four precariously balanced on a two-wheeler in pouring monsoon rain inspired the <strong>Tata Nano</strong>—a safe, weather-protected car priced for working families. While market positioning proved complex, the engineering minimalism set a worldwide benchmark for frugal innovation.
+                  </p>
+                </div>
+                <div class="impact-takeaway-highlight">
+                  <span class="takeaway-icon">💡</span>
+                  <span class="takeaway-text">Innovate for accessibility and solve real human friction</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4: Actionable Takeaway #2 -->
+            <article class="card-swap-card bright-card" data-card-index="3" id="impact-card-3">
+              <div class="card-swap-item-content">
+                <div class="card-swap-header">
+                  <div class="card-badge-pill badge-takeaway">Actionable Takeaway #2</div>
+                  <span class="card-number-tag">04 / 04</span>
+                </div>
+                <div class="card-swap-body">
+                  <h3 class="impact-swap-title">Ethics & Trust as the Bedrock of Business</h3>
+                  <p class="impact-swap-desc">
+                    Ratan Tata proved that long-term enterprise value stems from moral integrity rather than opportunistic quarterly shortcuts. During the 26/11 Mumbai terror attacks at the Taj Mahal Palace Hotel, Tata personally stood on the scene, visited every afflicted employee and guest family, and established the Taj Public Service Welfare Trust to support victims' families indefinitely.
+                  </p>
+                </div>
+                <div class="impact-takeaway-highlight card-scroll-cue-box">
+                  <div class="takeaway-main-row">
+                    <span class="takeaway-icon">🛡️</span>
+                    <span class="takeaway-text">Trust and integrity are compounding, permanent corporate assets</span>
+                  </div>
+                  <div class="scroll-cue-prompt" id="card-4-scroll-cue">
+                    <span>Click to explore Sources</span>
+                    <span class="scroll-cue-arrow">↓</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Pagination & Interaction Hint -->
+          <div class="card-swap-controls">
+            <div class="card-swap-dots" id="swap-dots" role="tablist" aria-label="Card pagination">
+              <button type="button" class="card-swap-dot active" data-index="0" aria-label="Go to card 1"></button>
+              <button type="button" class="card-swap-dot" data-index="1" aria-label="Go to card 2"></button>
+              <button type="button" class="card-swap-dot" data-index="2" aria-label="Go to card 3"></button>
+              <button type="button" class="card-swap-dot" data-index="3" aria-label="Go to card 4"></button>
+            </div>
+            <span class="card-swap-hint" id="card-swap-hint">Click card to swap </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tile 5: Sources & Fact Verification (White Canvas Tile #ffffff) -->
+    <section id="sources" class="tile-section tile-white sources-tile" aria-labelledby="sources-heading">
+      <div class="tile-inner">
+        <div class="tile-header center">
+          <span class="tile-kicker">Provenance & Fact Checking</span>
+          <h2 id="sources-heading" class="tile-headline">Verified Sources & Documentation</h2>
+          <p class="tile-lead">
+            Every date, corporate event, and financial statistic on this showcase is verifiable through primary corporate archives, peer-reviewed biographies, and official regulatory filings.
+          </p>
+        </div>
+
+        <div class="apple-table-card">
+          <table class="apple-sources-table" aria-label="Reference citations table">
+            <thead>
+              <tr>
+                <th scope="col">Entity / Topic</th>
+                <th scope="col">Claim / Fact Verified</th>
+                <th scope="col">Authoritative Source</th>
+                <th scope="col">Verification Link</th>
+              </tr>
+            </thead>
+            <tbody id="sources-table-body">
+              <!-- Injected via script.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sources-footnote">
+          <p>
+            <strong>Image & Attribution Note:</strong> Portrait photo of Ratan Tata (2011) by Hemant Mishra licensed under Creative Commons Attribution-Share Alike 3.0 Unported via Wikimedia Commons. Corporate data cross-verified with Tata Group Corporate Heritage portal (tata.com) and Encyclopaedia Britannica.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Apple Dark Footer with Pop-in Spring Animation -->
+  <footer class="apple-footer" id="app-footer">
+    <div class="footer-inner">
+      <div class="footer-top-row footer-popin-item">
+        <div class="footer-brand-lockup">
+          <span class="footer-apple-logo"></span>
+          <span class="footer-title">Ratan Tata Interactive Showcase</span>
+        </div>
+        <p class="footer-subtitle">EDC Second-Year Task 02 • Designed in the Apple Web Design Language</p>
+      </div>
+
+      <div class="footer-nav-columns">
+        <div class="footer-col footer-popin-item">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="#intro">Overview</a></li>
+            <li><a href="#journey">Chronological Timeline</a></li>
+            <li><a href="#ventures">Companies & Ventures</a></li>
+            <li><a href="#impact">Impact & Takeaways</a></li>
+            <li><a href="#sources">Sources & Provenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-popin-item">
+          <h4 class="footer-col-title">Flagship Ventures</h4>
+          <ul class="footer-link-list">
+            <li><a href="https://www.tata.com" target="_blank" rel="noopener noreferrer">Tata Sons</a></li>
+            <li><a href="https://www.tatamotors.com" target="_blank" rel="noopener noreferrer">Tata Motors</a></li>
+            <li><a href="https://www.tcs.com" target="_blank" rel="noopener noreferrer">TCS</a></li>
+            <li><a href="https://www.tatasteel.com" target="_blank" rel="noopener noreferrer">Tata Steel</a></li>
+            <li><a href="https://www.tataconsumer.com" target="_blank" rel="noopener noreferrer">Tata Consumer Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-popin-item">
+          <h4 class="footer-col-title">Documentation</h4>
+          <ul class="footer-link-list">
+            <li><a href="README.md" target="_blank">Technical README</a></li>
+            <li><a href="Lanyard.jsx" target="_blank">Lanyard.jsx Component</a></li>
+            <li><a href="https://www.britannica.com/biography/Ratan-Tata" target="_blank" rel="noopener noreferrer">Britannica Biography</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal-bar footer-popin-item">
+        <p class="legal-text">Copyright © 2026 Entrepreneurship Development Cell (EDC). Pure HTML5, CSS3, and Vanilla JavaScript with Zero External Bundles.</p>
+        <button type="button" class="footer-back-to-top" id="footer-back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <span class="back-to-top-arrow">↑</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

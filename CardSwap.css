@@ -1,0 +1,149 @@
+/* ==========================================================================
+   CardSwap — ReactBits 3D Stacked Deck Styling
+   ========================================================================== */
+
+.card-swap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 40px 0 20px;
+  perspective: 1200px;
+  box-sizing: border-box;
+}
+
+.card-swap-viewport {
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+/* Individual Card in Stack — Bright Canvas on Dark Background */
+.card-swap-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 24px;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 4px 16px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  transform-origin: 50% 100%;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.45s ease,
+              box-shadow 0.4s ease;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.card-swap-card.card-top:hover {
+  box-shadow: 0 32px 72px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Swap Animation Out State */
+.card-swap-card.card-swapping-out {
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.45s ease;
+}
+
+/* Card Content Layout */
+.card-swap-item-content {
+  width: 100%;
+  height: 100%;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+/* Image & Title template for data items */
+.card-swap-data-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-swap-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.card-swap-item-title {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  right: 24px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+/* Controls */
+.card-swap-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.card-swap-hint {
+  font-size: 12.5px;
+  color: #86868b;
+  letter-spacing: 0.02em;
+}
+
+.card-swap-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card-swap-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.card-swap-dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-swap-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card-swap-dot.active {
+  width: 24px;
+  border-radius: 999px;
+  background: #0066cc;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.7);
+}

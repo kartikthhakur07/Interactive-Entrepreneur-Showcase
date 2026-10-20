@@ -1,0 +1,52 @@
+/* ==========================================================================
+   ScrollStack.css - Sticky Stacking Cards Scroll Component
+   ========================================================================== */
+
+.scroll-stack-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.scroll-stack-item {
+  position: sticky;
+  top: 96px;
+  width: 100%;
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+
+.scroll-stack-item-inner {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  padding: 32px 36px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  transform-origin: 50% 0%;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease, opacity 0.25s ease;
+  will-change: transform, filter, opacity;
+  box-sizing: border-box;
+}
+
+/* Card Content Typography */
+.scroll-stack-item h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.18;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
+}
+
+.scroll-stack-item p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #424245;
+}

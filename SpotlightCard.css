@@ -1,0 +1,58 @@
+.reactbits-spotlight-card {
+  position: relative;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.reactbits-spotlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+/* Border spotlight highlight via CSS mask-composite */
+.reactbits-spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: radial-gradient(
+    var(--spotlight-size, 350px) circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    var(--spotlight-color, rgba(0, 102, 204, 0.5)),
+    transparent 70%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: var(--spotlight-opacity, 0);
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Surface radial fill luminescence */
+.reactbits-spotlight-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    calc(var(--spotlight-size, 350px) * 1.2) circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(0, 102, 204, 0.06),
+    transparent 75%
+  );
+  pointer-events: none;
+  opacity: var(--spotlight-opacity, 0);
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.reactbits-spotlight-content {
+  position: relative;
+  z-index: 1;
+}
