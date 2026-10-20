@@ -1,5 +1,7 @@
 # Ratan Tata Showcase — Apple Web Design Language
 **Context:** EDC Second-Year Task 02 · Interactive Showcase  
+**Live Vercel Deployment:** [https://interactive-entrepreneur-showcase.vercel.app/](https://interactive-entrepreneur-showcase.vercel.app/)  
+**GitHub Repository:** [https://github.com/kartikthhakur07/Interactive-Entrepreneur-Showcase](https://github.com/kartikthhakur07/Interactive-Entrepreneur-Showcase)  
 **Design System:** Apple Web Presence Design Language (Strict Token Adherence)  
 **Technology:** Vanilla HTML5, Vanilla CSS3, Vanilla JavaScript (Zero External Frameworks / Zero Dependencies)
 
@@ -16,10 +18,15 @@ EDC/
 ├── index.html        # Semantic HTML5 chassis with Apple two-row nav & edge-to-edge product tiles
 ├── style.css         # Pure CSS design system implementing Apple's exact tokens, typography & rhythm
 ├── script.js         # Pure Data Stores (milestones, family tree map, ventures, sources) & DOM/SVG rendering
+├── CardSwap.jsx      # Standalone ReactBits 3D stacked deck component
+├── CardSwap.css      # 3D depth and swap transition styling for CardSwap
 ├── Lanyard.jsx       # Standalone React Lanyard ID badge component
 ├── Lanyard.css       # 3D styling for the Lanyard component
+├── ScrollStack.jsx   # Standalone ReactBits continuous card stack component
+├── ScrollStack.css   # ScrollStack card styling
+├── SpotlightCard.jsx # Standalone ReactBits mouse-spotlight card component
+├── SpotlightCard.css # Radial glow spotlight styling
 ├── card-front.png    # High-resolution executive credential badge asset
-├── card-back.png     # Reverse credential asset (Tata Code of Conduct)
 ├── band.png          # Woven lanyard strap texture asset
 └── README.md         # Design system walkthrough, token mapping, and evaluation documentation
 ```
